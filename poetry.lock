@@ -339,6 +339,14 @@ version = "1.14.0"
 
 [[package]]
 category = "main"
+description = "slack bot for incomming webhook"
+name = "slackweb"
+optional = false
+python-versions = "*"
+version = "1.0.5"
+
+[[package]]
+category = "main"
 description = "The little ASGI library that shines."
 name = "starlette"
 optional = false
@@ -433,7 +441,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "398349ec27725629f1b7fee618bf043c74c372f5b573db1285ff0faee28434c7"
+content-hash = "35bd249257fcca4508aeaa6c1ba154fcbbd56b450a09244f23e15196e09633f5"
 python-versions = "^3.8 | ^3.7"
 
 [metadata.files]
@@ -599,6 +607,9 @@ restructuredtext-lint = [
 six = [
     {file = "six-1.14.0-py2.py3-none-any.whl", hash = "sha256:8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"},
     {file = "six-1.14.0.tar.gz", hash = "sha256:236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a"},
+]
+slackweb = [
+    {file = "slackweb-1.0.5.tar.gz", hash = "sha256:bb64f1f8fea99fc04ce8fb300a09aab8fe51d86e25cedafb1eaca07f7b828c36"},
 ]
 starlette = [
     {file = "starlette-0.13.2-py3-none-any.whl", hash = "sha256:6169ee78ded501095d1dda7b141a1dc9f9934d37ad23196e180150ace2c6449b"},
