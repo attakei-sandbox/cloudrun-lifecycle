@@ -1,0 +1,34 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "pytest",
+      "type": "shell",
+      "command": "poetry run pytest",
+      "problemMatcher": []
+    },
+    {
+      "label": "server",
+      "type": "shell",
+      "command": "poetry run python -m attakei_media -D",
+      "problemMatcher": []
+    },
+    {
+      "label": "docs",
+      "type": "shell",
+      "command": "poetry run make -C docs html"
+    },
+    {
+      "label": "docker",
+      "type": "shell",
+      "command": "docker build -t gcr.io/attakei-website/media ."
+    },
+    {
+      "label": "reformat",
+      "type": "shell",
+      "command": "poetry run black attakei_media tests"
+    }
+  ]
+}
